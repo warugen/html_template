@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>bootstrap4</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote-bs4.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote-bs4.js"></script>
+    <script src="https://github.com/summernote/summernote/tree/master/lang/summernote-ko-KR.js"></script>
+  </head>
+
+  <body>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <table>
+        <tr>
+          <td><input type="text" name="name" id="name" /></td>
+          <td>
+            <textarea name="fContent" id="summernote" cols="30" rows="10">
+            </textarea>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <script>
+      $("#summernote").summernote({
+        placeholder: "Hello bootstrap 4",
+        lang: "Ko-kr",
+        tabsize: 2,
+        height: 500
+      });
+    </script>
+  </body>
+</html>
